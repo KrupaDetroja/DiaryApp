@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="noDataView" customModule="DIARY_APP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RYh-kD-BKc">
+                    <rect key="frame" x="10" y="10" width="300" height="548"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uc6-7X-3Ne">
+                            <rect key="frame" x="25" y="149" width="250" height="250"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ht-MO-TLK" customClass="CustomButton" customModule="DIARY_APP" customModuleProvider="target">
+                            <rect key="frame" x="70" y="453" width="160" height="45"/>
+                            <color key="backgroundColor" red="0.1058823529" green="0.1058823529" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="160" id="LrO-n0-XX2"/>
+                                <constraint firstAttribute="height" constant="45" id="Vlp-A9-qBB"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="14"/>
+                            <state key="normal" title="Refresh">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="refreshButton_clicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="dWH-NG-Non"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No data found" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCv-1k-Fxj">
+                            <rect key="frame" x="10" y="409" width="280" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="iCv-1k-Fxj" firstAttribute="top" secondItem="Uc6-7X-3Ne" secondAttribute="bottom" constant="10" id="4Bo-Cl-kcK"/>
+                        <constraint firstItem="Uc6-7X-3Ne" firstAttribute="centerX" secondItem="RYh-kD-BKc" secondAttribute="centerX" id="Ehl-vx-XhH"/>
+                        <constraint firstItem="iCv-1k-Fxj" firstAttribute="leading" secondItem="RYh-kD-BKc" secondAttribute="leading" constant="10" id="Geu-WD-EeI"/>
+                        <constraint firstItem="Uc6-7X-3Ne" firstAttribute="width" secondItem="RYh-kD-BKc" secondAttribute="width" multiplier="0.833333" id="GiH-hL-dm4"/>
+                        <constraint firstItem="Uc6-7X-3Ne" firstAttribute="centerY" secondItem="RYh-kD-BKc" secondAttribute="centerY" id="I35-FC-Od0"/>
+                        <constraint firstAttribute="trailing" secondItem="iCv-1k-Fxj" secondAttribute="trailing" constant="10" id="I5I-Qc-hpv"/>
+                        <constraint firstAttribute="bottom" secondItem="1ht-MO-TLK" secondAttribute="bottom" constant="50" id="JwC-iq-plG"/>
+                        <constraint firstItem="1ht-MO-TLK" firstAttribute="centerX" secondItem="RYh-kD-BKc" secondAttribute="centerX" id="Khc-sd-iH5"/>
+                        <constraint firstItem="Uc6-7X-3Ne" firstAttribute="height" secondItem="RYh-kD-BKc" secondAttribute="height" multiplier="0.456204" id="TVw-6X-GYr"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="RYh-kD-BKc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="KY8-Iv-V5j"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="RYh-kD-BKc" secondAttribute="bottom" constant="10" id="PFQ-qK-vXn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="RYh-kD-BKc" secondAttribute="trailing" constant="10" id="s7o-1V-pQ0"/>
+                <constraint firstItem="RYh-kD-BKc" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="vR4-Fn-274"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="btnRefresh" destination="1ht-MO-TLK" id="B9B-3f-644"/>
+                <outlet property="lblMessage" destination="iCv-1k-Fxj" id="vVJ-m9-bnz"/>
+                <outlet property="vwAnimation" destination="Uc6-7X-3Ne" id="hm4-eW-Zzx"/>
+                <outlet property="vwMainBg" destination="RYh-kD-BKc" id="TCH-BN-dda"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="122"/>
+        </view>
+    </objects>
+</document>

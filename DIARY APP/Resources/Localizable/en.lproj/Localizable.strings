@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  DIARY APP
+
+  Created by Krupa Detroja on 22/10/20.
+  Copyright © 2020 DIARY APP. All rights reserved.
+*/
+
+
+
+"LOC_MY_DIARY" = "My Diary";
+"LOC_DIARY_TITLE" = "Diary Title";
+"LOC_DIARY_CONTENT" = "Diary Content";
